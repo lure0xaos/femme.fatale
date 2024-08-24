@@ -1,0 +1,32 @@
+[versions]
+java = "22"
+kotlin = "2.0.20"
+kotlin-serialization-core = "1.7.2"
+kotlin-serialization-json = "1.7.2"
+kotlinx-coroutines-core = "1.8.1"
+moduleplugin = "1.8.15"
+javafxplugin = "0.0.14"
+javafx = "22.0.2"
+org-beryx-jlink = "2.25.0"
+koin-core = "4.0.0-RC1"
+koin-annotations = "1.4.0-RC3"
+ksp-version = "2.0.20-1.0.24"
+kotlinx-datetime = "0.6.1"
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+javafxplugin = { id = "org.openjfx.javafxplugin", version.ref = "javafxplugin" }
+org-beryx-jlink = { id = "org.beryx.jlink", version.ref = "org-beryx-jlink" }
+devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-version" }
+moduleplugin = { id = "org.javamodularity.moduleplugin", version.ref = "moduleplugin" }
+[libraries]
+kotlin-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlin-serialization-core" }
+kotlin-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization-json" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines-core" }
+kotlinx-coroutines-javafx = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-javafx", version.ref = "kotlinx-coroutines-core" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin-core" }
+koin-coroutines = { module = "io.insert-koin:koin-core-coroutines", version.ref = "koin-core" }
+koin-annotations = { module = "io.insert-koin:koin-annotations", version.ref = "koin-annotations" }
+koin-ksp-compiler = { module = "io.insert-koin:koin-ksp-compiler", version.ref = "koin-annotations" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
+[bundles]

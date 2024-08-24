@@ -1,0 +1,9 @@
+/.idea/
+/.kotlin/
+/.gradle/
+/app/build/
+/gen/build/
+/kfx/build/
+/log/build/
+/model/build/
+/build/
